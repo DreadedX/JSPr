@@ -14,12 +14,12 @@ apply plugin: 'application'
 mainClassName = 'com.mtgames.jspr.Packer'
 
 repositories {
-    // mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
+  compile 'org.kamranzafar:jtar:2.2'
   compile fileTree(dir: 'libs', include: '*.jar')
-  runtime fileTree(dir: 'libs/natives', include: '*')
 }
 
 jar {
